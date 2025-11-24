@@ -148,7 +148,7 @@ systeminfo
 
 ```text
 nmap -sC -sV -T4 -Pn <target>
-ffuf -u http://<target>/FUZZ -w wordlist
+wffuf -u http://<target>/FUZZ -w wordlist
 searchsploit --nmap scans/initial.nmap
 sqlmap -u "http://<target>/item.php?id=1" --batch
 ./linpeas.sh -a
